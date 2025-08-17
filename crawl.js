@@ -89,9 +89,6 @@ const fetchImage = async (id, interval) => {
 const id = process.argv[2];
 
 if (!id) {
-  console.error(
-    "⚠️ Bạn phải truyền ID camera vào như: node index.js <camera_id>"
-  );
   process.exit(1);
 }
 

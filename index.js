@@ -4,13 +4,13 @@ const { fork } = require("child_process");
 
 const activeChildren = new Map();
 
+// Lọc ra camera theo quận
 const data = listCameras.filter(
   (cam) => cam.district && cam.district == "Quận 7"
 );
 
 fs.mkdirSync("./images", { recursive: true });
 
-// Hàm delay
 function delay(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
